@@ -34,21 +34,21 @@ export default class PartialTable extends Component {
         <div className="row">
           <div className="col-xs-4">
             <div>
-              <label htmlFor="page-menu">Page size:</label>
+              <label htmlFor="page-menu">Page size: </label>
               <select
                 id="page-menu"
                 value={pageSize}
                 onChange={onPageSizeChange}
               >
-                {pageLengthOptions.map(opt =>
+                {pageLengthOptions.map(opt => (
                   <option key={opt} value={opt}>
                     {opt === 0 ? 'All' : opt}
-                  </option>,
-                )}
+                  </option>
+                ))}
               </select>
             </div>
             <div>
-              <label htmlFor="search-field">Search:</label>
+              <label htmlFor="search-field">Search Table: </label>
               <input
                 id="search-field"
                 type="search"
